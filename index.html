@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matrice</title>
+        <link rel="icon" href="logo_matrice.png">
+        <link rel="stylesheet" type="text/css" href="bootstrap\css\style.css">
+        <script type="text/javascript" src="bootstrap\jquery.js"></script>
+        <script type="text/javascript" src="bootstrap\popper.js"></script>
+        <script type="text/javascript" src="bootstrap\bootstrap.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="d-lg-flex justify-content-between bg-info">
+            <div class="d-flex justify-content-between flex-grow-1 align-items-center px-3">
+                <div>
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="logo_matrice.png" width="50" height="50" alt="Logo du site">
+                        Matrice
+                    </a>
+                </div>
+                <div class="d-lg-none" data-toggle="collapse" data-target="#Content">
+                    <svg width="40" height="40" fill="currentColor" class="bi bi-justify text-white" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </div>
+            </div>
+            <ul id="Content" class="d-lg-flex align-items-center text-center m-0 p-0 collapse">
+                <li class="d-lg-flex align-items-center px-0 px-lg-5 py-2 py-lg-0 h-100" onclick="afficherPageDefinitionMatrice()">
+                    Ma matrice
+                </li>
+                <li class="d-flex align-items-center justify-content-center px-0 px-lg-5 py-2 py-lg-0 h-100" id="operations">
+                    Opérations
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down mx-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    <ul class="bg-info p-0" id="listOperations">
+                        <li class="p-2" onclick="afficherPageNatureTraceDetermiantMatrice()">Nature, Trace et Détermiant</li>
+                        <li class="p-2" onclick="afficherPageMultiplicationParScalaire()">Multiplier la matrice par un scalaire</li>
+                        <li class="p-2" onclick="afficherPageEgaliteEntreMatrices()">Egalité entre deux matrices</li>
+                        <li class="p-2" onclick="afficherPageTransposeeMatrice()">Transposée d'une matrice</li>
+                        <li class="p-2" onclick="afficherPageSommeMatrice()">Somme de deux matrices</li>
+                        <li class="p-2" onclick="afficherPageProduitMatrices()">Produit de deux matrices</li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <section class="mt-3" id="section">
+            
+        </section>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

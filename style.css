@@ -1,0 +1,62 @@
+body{
+    font-size: 1.2em;
+}
+header{
+    color: white;
+}
+.navbar-brand{
+    font-size: 1.7em;
+}
+input[type='number'], .input{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: #17a2b8 solid 2px;
+    background-color: rgb(222, 245, 248);
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    background-color: rgba(70, 152, 163, 0.5);
+}
+.colonnes{
+    width: 100px;
+}
+#operations{
+    position: relative;
+}
+#operations:hover #listOperations{
+    display: block;
+}
+a, a:hover{
+    color: white;
+    text-decoration: none;
+}
+#listOperations{
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    width: 100%;
+    display: none;
+}
+.chemin{
+    background-color: #eeeeee;
+}
+@media (min-width: 992px) {
+    #listOperations{
+        width: 200%;
+        left: -100%;
+        text-align: left;
+    }
+}
+#matrice{
+    scroll-behavior: smooth;
+}
+.couper{
+    overflow: hidden;
+}
